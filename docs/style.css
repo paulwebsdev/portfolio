@@ -122,3 +122,24 @@ footer {
 .project a:hover {
     background: #0ea5e9;
 }
+
+.project-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    background: #38bdf8;
+    color: black;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
