@@ -141,5 +141,39 @@ footer {
 
 .project-links a:hover {
     background: #0ea5e9;
+
+    .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #2563eb;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 15px;
+}
+
+.project-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
     transform: scale(1.05);
 }
