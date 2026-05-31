@@ -3,80 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul | Frontend Developer</title>
+<title>Paul Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-    <h2 class="logo">Paulwebsdev</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
 <header class="hero">
-    <img src="profile.jpg" class="profile">
+    <img src="profile.jpg" alt="Paul Profile" class="profile-pic">
 
     <h1>Hi, I'm Paul 👋</h1>
-    <p class="subtitle">Frontend Developer (HTML • CSS • JavaScript)</p>
+    <p class="role">Frontend Web Developer</p>
+    <p>I build modern, responsive and user-friendly websites using HTML, CSS & JavaScript.</p>
 
-    <p class="desc">
-        I build clean, responsive and modern web applications.
-    </p>
-
-    <div class="buttons">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="contact.html" class="btn-outline">Contact Me</a>
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+        <a href="cv.pdf" class="btn" download>Download CV</a>
     </div>
 </header>
 
-<!-- SKILLS -->
-<section>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Frontend Developer focused on building clean, responsive and modern web applications.
+    </p>
+</section>
+
+<section id="skills">
     <h2>Skills</h2>
-
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub</span>
-        <span>Responsive Design</span>
-    </div>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+    </ul>
 </section>
 
-<!-- FEATURED PROJECTS -->
-<section>
-    <h2>Featured Projects</h2>
-
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Personal developer portfolio</p>
-        </div>
-
-        <div class="card">
-            <h3>Weather App</h3>
-            <p>API-based weather application</p>
-        </div>
-
-        <div class="card">
-            <h3>Calculator</h3>
-            <p>JavaScript calculator app</p>
-        </div>
-
-    </div>
+<section class="hire-me">
+    <h2>Available for Work 🚀</h2>
+    <p>Open for freelance and frontend developer opportunities.</p>
+    <a href="mailto:paulbamigbaye@gmail.com" class="hire-btn">Hire Me</a>
 </section>
 
-<!-- FOOTER -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="project-list">
+
+    <div class="project">
+        <img src="portfolio.png">
+        <h3>Portfolio Website</h3>
+        <p>My personal developer portfolio built with HTML and CSS.</p>
+        <div class="project-links">
+            <a href="https://github.com/paulwebsdev/portfolio">GitHub</a>
+            <a href="https://paulwebsdev.github.io/portfolio/">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="weather.png">
+        <h3>Weather App</h3>
+        <p>Real-time weather app using OpenWeather API.</p>
+        <div class="project-links">
+            <a href="https://github.com/paulwebsdev/weather-app">GitHub</a>
+            <a href="https://paulwebsdev.github.io/Weather-App/">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="fb-clone.png">
+        <h3>Facebook Clone</h3>
+        <p>UI clone built with HTML and CSS.</p>
+        <div class="project-links">
+            <a href="https://github.com/paulwebsdev/facebook-login-clone">GitHub</a>
+            <a href="https://paulwebsdev.github.io/facebook-login-clone/">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="calculator-project.png">
+        <h3>Calculator App</h3>
+        <p>Simple calculator built with JavaScript.</p>
+        <div class="project-links">
+            <a href="https://github.com/paulwebsdev/Calculator-Project">GitHub</a>
+            <a href="https://paulwebsdev.github.io/Calculator-Project/">Live Demo</a>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: paulbamigbaye@gmail.com</p>
+
+    <button onclick="copyEmail()">Copy Email</button>
+
+    <br><br>
+
+    <a href="https://wa.me/2348147736558" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<script>
+function copyEmail() {
+    navigator.clipboard.writeText("paulbamigbaye@gmail.com");
+    alert("Email copied!");
+}
+</script>
+
 <footer>
-    <p>© 2026 Paul | Frontend Developer</p>
+<p>✔ Official developer portfolio</p>
+<p>© 2026 Paul</p>
 </footer>
 
 </body>
