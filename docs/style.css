@@ -1,54 +1,136 @@
-body {
+* {
     margin: 0;
-    font-family: Arial;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
     background: #0f172a;
     color: white;
-}
-
-/* NAV */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: #111827;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    line-height: 1.6;
 }
 
 /* HERO */
 .hero {
     text-align: center;
     padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
-.profile {
+.profile-pic {
     width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 3px solid #38bdf8;
+    margin-bottom: 15px;
 }
 
-.subtitle {
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.role {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
     color: #38bdf8;
 }
 
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    display: inline-block;
+    background: #1e293b;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* PROJECTS */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: #1e293b;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.project img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* BUTTONS */
-.btn, .btn-outline {
-    padding: 10px 20px;
-    margin: 10px;
+.btn, .btn-outline, .hire-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 8px;
     border-radius: 8px;
     text-decoration: none;
-    display: inline-block;
+    font-weight: bold;
 }
 
 .btn {
@@ -61,34 +143,13 @@ nav a {
     color: #38bdf8;
 }
 
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* SKILLS */
-.skills span {
-    display: inline-block;
-    margin: 8px;
-    padding: 8px 15px;
-    border: 1px solid #38bdf8;
-    border-radius: 20px;
-}
-
-/* PROJECT CARDS */
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
+/* CONTACT */
+button {
+    padding: 10px 15px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -96,4 +157,5 @@ footer {
     text-align: center;
     padding: 20px;
     background: #111827;
+    margin-top: 30px;
 }
