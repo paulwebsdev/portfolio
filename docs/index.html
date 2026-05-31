@@ -1,232 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="-zu6mxQwZQPfwO0sl3hHTS3-nVIbRX4TDa9GRV9narw" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul Portfolio</title>
+<title>Paul | Frontend Developer</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
-<header class="hero">
-
-    <img src="profile.jpg" alt="Paul Profile" class="profile-pic">
-
-    <h1>Hi, I'm Paul 👋</h1>
-    <p class="role">Frontend Web Developer</p>
-    <p>I build modern, responsive and user-friendly websites using HTML, CSS & JavaScript.</p>
-
-    <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn-outline">Contact Me</a>
-        <a href="cv.pdf" class="btn" download>Download CV</a>
-    </div>
-
-</header>
-
 <!-- NAV -->
 <nav>
+    <h2 class="logo">Paul.dev</h2>
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Frontend Developer focused on building clean, responsive and modern web applications.
-        I enjoy turning ideas into real websites and improving my skills through real projects.
-    </p>
-</section>
+<!-- HERO -->
+<header class="hero">
+    <img src="assets/profile.jpg" class="profile">
 
-<!-- SERVICES (NEW - IMPORTANT) -->
-<section id="services">
-    <h2>What I Do</h2>
-    <ul>
-        <li>💻 Website Development</li>
-        <li>🎨 UI Design</li>
-        <li>📱 Responsive Design</li>
-        <li>⚡ Frontend Projects</li>
-    </ul>
-</section>
+    <h1>Hi, I'm Paul 👋</h1>
+    <p class="subtitle">Frontend Developer (HTML • CSS • JavaScript)</p>
+
+    <p class="desc">
+        I build clean, responsive and modern web applications.
+    </p>
+
+    <div class="buttons">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="contact.html" class="btn-outline">Contact Me</a>
+    </div>
+</header>
 
 <!-- SKILLS -->
-<section id="skills">
+<section>
     <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-    </ul>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
+    </div>
 </section>
 
-<!-- HIRE ME -->
-<section class="hire-me">
-    <h2>Available for Work 🚀</h2>
-    <p>Open for freelance, internship, and frontend developer opportunities.</p>
-    <a href="mailto:paulbamigbaye@gmail.com" class="hire-btn">Hire Me</a>
-</section>
+<!-- FEATURED PROJECTS -->
+<section>
+    <h2>Featured Projects</h2>
 
-<!-- PROJECTS -->
-<section id="projects">
-<h2>Projects</h2>
+    <div class="card-container">
 
-<div class="project-list">
-
-    <div class="project">
-        <img src="portfolio.png" alt="Portfolio Website">
-
-        <h3>Portfolio Website</h3>
-        <p>My personal developer portfolio built with HTML and CSS.</p>
-
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/portfolio" target="_blank">GitHub</a>
-            <a href="https://paulwebsdev.github.io/portfolio/" target="_blank">Live Demo</a>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal developer portfolio</p>
         </div>
-    </div>
 
-<div class="project">
-        <img src="weather.png" alt="weather app">
-
-        <h3>Weather App</h3>
-        <p>A simple and responsive weather application that displays real-time weather information using the OpenWeather API.
-It also supports auto-location detection and city search..</p>
-
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/weather-app" target="_blank">GitHub</a>
-            <a href="https://paulwebsdev.github.io/Weather-App/" target="_blank">Live Demo</a>
+        <div class="card">
+            <h3>Weather App</h3>
+            <p>API-based weather application</p>
         </div>
-    </div>
- 
-    <div class="project">
-        <img src="fb-clone.png" alt="Facebook Login Clone">
 
-        <h3>Facebook Login Clone</h3>
-        <p>A UI clone of Facebook login page using HTML and CSS.</p>
-
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/facebook-login-clone" target="_blank">GitHub</a>
-            <a href="https://paulwebsdev.github.io/facebook-login-clone/" target="_blank">Live Demo</a>
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>JavaScript calculator app</p>
         </div>
+
     </div>
-
-
-<div class="project">
-    <img src="job-application.png" alt="Job Application Form">
-
-    <h3>Job Application Form</h3>
-    <p>
-        A responsive job application form built with HTML, CSS and JavaScript.
-        It stores submitted applications using localStorage.
-    </p>
-
-    <div class="project-links">
-        <a href="https://github.com/paulwebsdev/job-application-form"
-           target="_blank"
-           rel="noopener noreferrer">
-           GitHub
-        </a>
-
-        <a href="https://paulwebsdev.github.io/job-application-form/"
-           target="_blank"
-           rel="noopener noreferrer">
-           Live Demo
-        </a>
-    </div>
-</div>
-
-
-<div class="project">
-    <img src="developer-survey.png" alt="Developer Survey App">
-
-    <h3>Developer Survey App</h3>
-    <p>
-        A survey application that collects developer feedback and stores responses
-        using JavaScript localStorage.
-    </p>
-
-    <div class="project-links">
-        <a href="https://github.com/paulwebsdev/developer-survey-app"
-           target="_blank"
-           rel="noopener noreferrer">
-           GitHub
-        </a>
-
-        <a href="https://paulwebsdev.github.io/developer-survey-app/"
-           target="_blank"
-           rel="noopener noreferrer">
-           Live Demo
-        </a>
-    </div>
-</div>
-
-
-<div class="project">
-    <img src="calculator-project.png" alt="Calculator Project">
-
-    <h3>Calculator App</h3>
-
-    <p>
-        A modern calculator built with HTML, CSS and JavaScript.
-        Supports basic arithmetic operations with a clean and responsive user interface.
-    </p>
-
-    <div class="project-links">
-        <a href="https://github.com/paulwebsdev/Calculator-Project"
-           target="_blank"
-           rel="noopener noreferrer">
-           GitHub
-        </a>
-
-        <a href="https://paulwebsdev.github.io/Calculator-Project/"
-           target="_blank"
-           rel="noopener noreferrer">
-           Live Demo
-        </a>
-    </div>
-</div>
-
-    
-    
-</div>
 </section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>Email: paulbamigbaye@gmail.com</p>
-
-    <button onclick="copyEmail()">Copy Email</button>
-
-    <br><br>
-
-    <a href="https://wa.me/2348147736558" target="_blank">
-        Chat on WhatsApp
-    </a>
-</section>
-
-<script>
-function copyEmail() {
-    navigator.clipboard.writeText("paulbamigbaye@gmail.com");
-    alert("Email copied!");
-}
-</script>
 
 <!-- FOOTER -->
 <footer>
-    <p>✔ Official developer portfolio</p>
-<p>✔ Built and maintained by Paul</p>
-<p>© 2026 Paul | Frontend Web Developer</p>
+    <p>© 2026 Paul | Frontend Developer</p>
 </footer>
 
 </body>
