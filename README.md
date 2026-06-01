@@ -6,7 +6,7 @@ It showcases my skills, projects, and contact information.
 ---
 
 ## 🌐 Live Demo
-https://paulwebsdev.github.io/portfolio/
+https://paulwebdev.netlify.app/
 
 ---
 
