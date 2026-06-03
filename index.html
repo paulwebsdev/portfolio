@@ -1,152 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="IxHtjivZ7TI36mdXqNuNlpM1_nrzP6xnzpfKqG1hcLE" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul Portfolio</title>
+<title>PaulWebsDev | Website Developer</title>
+
 <link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+<link rel="icon" href="logo.png">
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav id="nav">
+    <div class="logo">
+        <img src="logo.png">
+        <span>PaulWebsDev</span>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
 <header class="hero">
-    <img src="profile.jpg" alt="Paul Profile" class="profile-pic">
+    <img src="profile.jpg" class="profile-pic">
 
-    <h1>Hi, I'm Paul 👋</h1>
-    <p class="role">Frontend Web Developer</p>
-    <p>I build modern, responsive and user-friendly websites using HTML, CSS & JavaScript.</p>
+    <h1 class="reveal">I Build Websites That Grow Businesses</h1>
 
-    <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn-outline">Contact Me</a>
+    <p class="role reveal">
+        Modern, fast and responsive websites for brands & businesses
+    </p>
+
+    <div class="hero-buttons reveal">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="contact.html" class="btn-outline">Hire Me</a>
         <a href="cv.pdf" class="btn" download>Download CV</a>
     </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Frontend Developer focused on building clean, responsive and modern web applications.
-    </p>
+<!-- ABOUT -->
+<section class="reveal">
+<h2>About Me</h2>
+<p>
+I'm Paul, a frontend web developer who builds modern websites that help businesses attract customers and grow online.
+</p>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-    </ul>
-</section>
+<!-- SERVICES -->
+<section class="reveal">
+<h2>Services</h2>
 
-<section class="hire-me">
-    <h2>Available for Work 🚀</h2>
-    <p>Open for freelance and frontend developer opportunities.</p>
-    <a href="mailto:paulbamigbaye@gmail.com" class="hire-btn">Hire Me</a>
-</section>
+<div class="service-container">
 
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="project-list">
-
-    <div class="project">
-        <img src="portfolio.png" alt="Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>My personal developer portfolio built with HTML and CSS.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/portfolio" target="_blank">GitHub</a>
-            <a href="https://paulwebdev.netlify.app/" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="weather.png" alt="Weather App">
-        <h3>Weather App</h3>
-        <p>Real-time weather app using OpenWeather API.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/weather-app" target="_blank">GitHub</a>
-            <a href="https://weather-app-ul.netlify.app" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="fb-clone.png" alt="Facebook Clone">
-        <h3>Facebook Clone</h3>
-        <p>UI clone built with HTML and CSS.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/facebook-login-clone" target="_blank">GitHub</a>
-            <a href="https://fb-page-clon.netlify.app" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="calculator-project.png" alt="Calculator App">
-        <h3>Calculator App</h3>
-        <p>Simple calculator built with JavaScript.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/Calculator-Project" target="_blank">GitHub</a>
-            <a href="https://calculator-project-sim.netlify.app" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="job-application.png" alt="Job Application Form">
-        <h3>Job Application Form</h3>
-        <p>A responsive job application form built with HTML, CSS and JavaScript.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/job-application-form" target="_blank">GitHub</a>
-            <a href="https://form-application-app.netlify.app" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="developer-survey.png" alt="Developer Survey App">
-        <h3>Developer Survey App</h3>
-        <p>A survey application that collects developer feedback using JavaScript.</p>
-        <div class="project-links">
-            <a href="https://github.com/paulwebsdev/developer-survey-app" target="_blank">GitHub</a>
-            <a href="https://developer-survey-app.netlify.app" target="_blank">Live Demo</a>
-        </div>
-    </div>
-
+<div class="service-card">
+<h3>Business Websites</h3>
+<p>Professional websites for companies.</p>
 </div>
 
-<section id="contact">
-    <h2>Contact Me</h2>
+<div class="service-card">
+<h3>E-commerce Stores</h3>
+<p>Online stores to sell products.</p>
+</div>
 
-    <p>Email: paulbamigbaye@gmail.com</p>
+<div class="service-card">
+<h3>Landing Pages</h3>
+<p>High converting pages for ads.</p>
+</div>
 
-    <button onclick="copyEmail()">Copy Email</button>
-
-    <br><br>
-
-    <a href="https://wa.me/2348147736558" target="_blank">Chat on WhatsApp</a>
+</div>
 </section>
 
-<script>
-function copyEmail() {
-    navigator.clipboard.writeText("paulbamigbaye@gmail.com");
-    alert("Email copied!");
-}
-</script>
+<!-- CTA -->
+<section class="hire reveal">
+<h2>Need a Website?</h2>
+<p>Let’s build something amazing for your business.</p>
+<a href="contact.html" class="btn">Contact Me</a>
+</section>
 
+<!-- FOOTER -->
 <footer>
-<p>✔ Official developer portfolio</p>
-<p>© 2026 Paul</p>
+<p>© 2026 PaulWebsDev</p>
 </footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/2348147736558" target="_blank">💬</a>
 
 </body>
 </html>
